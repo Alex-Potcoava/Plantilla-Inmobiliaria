@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #7e7e7e;
+  --buttonColor: #f69229;
+  --backgroundColor: #5d8a9f;
+  --paddingSeccion: 60px 0;
+  --marginElement: 40px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: var(--paddingSeccion);
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.logo img {
+  display: block;
+  height: 100%;
+}
+
+.links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.links a {
+  color: var(--backgroundColor);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.principal {
+  height: 500px;
+  background-image: url(kilarov-zaneit-aXq37rUfotU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-text {
+  padding: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.principal h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.principal p {
+  font-weight: 300;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.button {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  background: var(--buttonColor);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 35px;
+  color: var(--backgroundColor);
+}
+
+.copy {
+  text-align: center;
+  color: var(--textColor);
+  margin: 20px 0;
+}
+
+.benefits {
+  padding: var(--paddingSeccion);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-image: url(presdon-luczek-KFPJ0Hv6M3g-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.projects {
+  background: #f2f2f2;
+}
+
+.container-image {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container-image img {
+  display: block;
+  object-fit: cover;
+  width: 30%;
+  height: 220px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--marginElement);
+}
+
+.people {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+footer {
+  background-image: url(kilarov-zaneit-aXq37rUfotU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.footer .title-section,
+footer .copy {
+  color: white;
+}
+
+.social-media {
+  padding-top: var(--marginElement);
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.social-media i {
+  font-size: 60px;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
+  }
+
+  .principal h1 {
+    font-size: 38px;
+  }
+
+  .benefits {
+    margin-bottom: var(--marginElement);
+  }
+
+  .container-image img {
+    width: 90%;
+  }
+
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media i {
+    margin-bottom: 20px;
+  }
+}
